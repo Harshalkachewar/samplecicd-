@@ -24,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/qod:docker-ci-setup-on-self-hosted-runner1
+          tags: harshalkachewar404/qod:docker-ci-setup-on-self-hosted-runner1
