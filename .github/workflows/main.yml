@@ -5,7 +5,7 @@ on:
 
 jobs:
   docker:
-    runs-on: [self-hosted, killer]  # Use labels here directly as an array
+    runs-on: [self-hosted]  # Use labels here directly as an array
 
     steps:
       - name: Set up QEMU
