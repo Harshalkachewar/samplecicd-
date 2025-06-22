@@ -30,3 +30,11 @@ jobs:
         run: |
           docker pull harshalkachewar404/qod:docker-ci-setup-on-self-hosted-runner1
           docker run -itd --name qod-container harshalkachewar404/qod:docker-ci-setup-on-self-hosted-runner1
+
+  k8s-deployment:
+    name: K8S Deployment
+    runs-on: [self-hosted]
+
+    steps:
+      - name: Create Kubernetes Deployment
+        run: kubectl create deployment githubaction-image --image=docker.10/httpd
